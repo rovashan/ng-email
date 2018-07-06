@@ -1,10 +1,21 @@
 # ngEmail
-
-**Generated from HotTowel Angular**
+Sample email application using AngularJS following a module based architechure and adhering to John Papa's style guide.
 
 >*Opinionated Angular style guide for teams by [@john_papa](//twitter.com/john_papa)*
 
 >More details about the styles and patterns used in this app can be found in my [Angular Style Guide](https://github.com/johnpapa/angularjs-styleguide) and my [Angular Patterns: Clean Code](http://jpapa.me/ngclean) course at [Pluralsight](http://pluralsight.com/training/Authors/Details/john-papa) and working in teams.
+
+.NET WebApi based server can be found here:
+https://github.com/rovashan/Mailserver
+
+**Instructions**
+1. Download and run server.
+2. Update apiUrl in constants.js to point to server endpoint url.
+2. Run client with `gulp serve-dev`.
+
+**Generated from HotTowel Angular**
+
+HotTowel instructions below:
 
 ## Prerequisites
 
