@@ -4,10 +4,12 @@
   angular.module('app', [
     'app.core',
     'app.widgets',
-    'app.admin',
-    'app.dashboard',
     'app.layout',
-    'app.inbox'
+    'app.inbox',
+    'app.drafts',
+    'app.sent',
+    'app.outbox',
+    'app.trash'
   ]);
 
 })();

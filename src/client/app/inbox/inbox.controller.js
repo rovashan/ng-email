@@ -5,11 +5,12 @@
         .module('app.inbox')
         .controller('InboxController', InboxController)
 
-    InboxController.$inject = ['mailservice'];
+    InboxController.$inject = ['mailservice', 'logger'];
 
-    function InboxController(mailservice) {
+    function InboxController(mailservice, logger) {
         /* jshint validthis:true */
         var vm = this;
+        vm.title = 'Inbox';
         vm.messages = [];
 
         activate();

@@ -2,7 +2,7 @@
     'use strict';
   
     angular
-      .module('app.inbox')
+      .module('app.sent')
       .run(appRun);
   
     appRun.$inject = ['routerHelper'];
@@ -14,19 +14,20 @@
     function getStates() {
       return [
         {
-          state: 'inbox',
+          state: 'sent',
           config: {
             url: '/',
-            templateUrl: 'app/inbox/inbox.html',
-            controller: 'InboxController',
+            templateUrl: 'app/sent/sent.html',
+            controller: 'SentController',
             controllerAs: 'vm',
-            title: 'inbox',
+            title: 'sent',
             settings: {
               nav: 1,
-              content: '<i class="fa fa-folder"></i> Inbox'
+              content: '<i class="fa fa-folder"></i> Sent'
             }
           }
         }
       ];
     }
   })();
+  

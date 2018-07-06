@@ -11,7 +11,9 @@
     var vm = this;
     var states = routerHelper.getStates();
     vm.isCurrent = isCurrent;
-
+    vm.sendMail = sendMail;
+    vm.getMail = getMail;
+    
     activate();
 
     function activate() { getNavRoutes(); }
@@ -30,6 +32,14 @@
       }
       var menuName = route.title;
       return $state.current.title.substr(0, menuName.length) === menuName ? 'current' : '';
+    }
+
+    function sendMail() {
+      alert('Send Mail');  
+    }
+    
+    function getMail() {
+      alert('Receive Mail');  
     }
   }
 })();

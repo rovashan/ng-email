@@ -1,6 +1,9 @@
 <nav class="navbar navbar-fixed-top navbar-inverse">
   <div class="navbar-header">
-    <a href="/" class="navbar-brand"><span class="brand-title">{{vm.navline.title}}</span></a>
+    <a href="/" class="navbar-brand">
+      <i class="fa fa-envelope"></i>
+      <span class="brand-title">{{vm.navline.title}}</span>
+    </a>
     <a class="btn navbar-btn navbar-toggle" ng-click="isCollapsed = !isCollapsed">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
@@ -11,11 +14,32 @@
     <div class="pull-right navbar-logo">
       <ul class="nav navbar-nav pull-right">
         <li>
-          <a href="" target="_blank">
-            <i class="fa fa-user"></i> My Account
+          <a>
+            <button type="button" class="btn btn-lg btn-success" data-toggle="modal" data-target="#myModal">
+              <i class="fa fa-user"></i> My Account
+            </button>
           </a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Account Details</h4>
+      </div>
+      <div class="modal-body">
+        <p>Display account information</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

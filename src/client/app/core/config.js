@@ -14,7 +14,7 @@
 
   var config = {
     appErrorPrefix: '[ngEmail Error] ',
-    appTitle: 'ngEmail'
+    appTitle: 'MailBox'
   };
 
   core.value('config', config);

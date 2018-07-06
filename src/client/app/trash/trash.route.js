@@ -2,7 +2,7 @@
     'use strict';
   
     angular
-      .module('app.inbox')
+      .module('app.trash')
       .run(appRun);
   
     appRun.$inject = ['routerHelper'];
@@ -14,19 +14,20 @@
     function getStates() {
       return [
         {
-          state: 'inbox',
+          state: 'trash',
           config: {
             url: '/',
-            templateUrl: 'app/inbox/inbox.html',
-            controller: 'InboxController',
+            templateUrl: 'app/trash/trash.html',
+            controller: 'TrashController',
             controllerAs: 'vm',
-            title: 'inbox',
+            title: 'trash',
             settings: {
               nav: 1,
-              content: '<i class="fa fa-folder"></i> Inbox'
+              content: '<i class="fa fa-folder"></i> Trash'
             }
           }
         }
       ];
     }
   })();
+  
